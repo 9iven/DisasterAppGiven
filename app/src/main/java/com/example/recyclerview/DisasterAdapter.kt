@@ -19,6 +19,7 @@ class DisasterAdapter(
             with(binding) {
                 txtDisasterName.text = data.nameDisaster
                 txtDisasterType.text = data.disasterType
+                imgDisaster.setImageResource(data.imageDisaster)
                 itemView.setOnClickListener {
                     onClickDisaster(data)
                 }
